@@ -1,145 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head>
-	
-<h1><title>sign in</title><h1>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.input-container {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  width: 100%;
-  margin-bottom: 15px;
-}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
 
-.icon {
-  padding: 10px;
-  background: dodgerblue;
-  color: white;
-  min-width: 50px;
-  text-align: center;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.input-field {
-  width: 100%;
-  padding: 10px;
-  outline: none;
-}
+    <style type="text/css">
+    	.first{
+    		height: 500px;
+    		width:400px;
+    		margin-top: 125px;
+    		margin-left: 450px;
+    		border-style: ridge;
+    	}
+    	.second{
+    		background-color: #4169E1;
+    		height:50px;
+    		margin-top:0px;
+    	}
+    	input{
+    		width:300px;
+    		margin-left: 50px;
+    	}
+    	button{
+    		margin-left: 50px;
+    		width:300px;
+    		color: white;
+    		background-color: #3498DB;
+    	}
+    </style>
 
-.input-field:focus {
-  border: 2px solid dodgerblue;
-}
+    <title>Sign In</title>
+  </head>
+  <body>
+  	<div class="first" >
+  		<div class="second">
+  		<div class="center">
+  			<h2 style="color: white"> 
+  			<i class="fa fa-graduation-cap"></i><b>Sign In</b></h2>
+  			</h2></div>
+  			
+  		</div>
+  		<br>
+  		<form>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* style the container */
-.container {
-  position: relative;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px 0 30px 0;
-} 
-
-/* style inputs and link buttons */
-input,
-.btn {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  margin: 5px 0;
-  opacity: 0.85;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none; /* remove underline from anchors */
-}
-
-input:hover,
-.btn:hover {
-  opacity: 1;
-}
-
-/* add appropriate colors to fb, twitter and google buttons */
-.fb {
-  background-color: blue;
-  color: white;
-}
-.google {
-  background-color: red;
-  color: white;
-}
-.btn {
-  background-color: ;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-}
-button {
-  background-color: blue;
-  color: white;
-  padding: 16px 32px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+  			<input type="text" placeholder="mail@example.com                              &#xF0e0;" style="font-family: Arial, 'Font Awesome 5 Free'" />
+  			<br><br>
+  			<input type="password" placeholder="password                                              &#xf13e;" style="font-family: Arial, 'Font Awesome 5 Free'" />
+  			<br><br>
+  			<button><b>SIGN IN</b></button>
+  			<a href="#" style="margin-left: 50px" >Forgot your password?</a>
+  			<a href="#" style="margin-left: 100px">Register!</a>
+  			<br><br>
+  			<p style="margin-left: 50px; color:#AEB6BF ">
+  			____________________ OR _____________________</p>
+  			<br>
+  			<button style="background-color:  #21618C"> f </button>
+  			<br>
+  			<button style="background-color: #E74C3C">g</button>
+  			<br><br>
+  			<button style="background-color: #F4D03F  ">< EPAM LOGIN ></button>
+  		</form>
+  		
+  	</div>
 
 
 
-</style>
-</head>
-<body>
-<form action="/action_page.php" style="max-width:300px;margin:auto">
-<div class>
-<h3> <center>Sign in</center></h3>
-</div>
-  <div class="input-container">
-    <i class="fa fa-envelope icon"></i>
-    <input type="text" placeholder="Enter your mail id here" id="username" name="username"><br><br>
-  </div>
-  
-  <div class="input-container">
-    <i class="fa fa-lock icon"></i>
-    <input type="password" placeholder="Enter your password here" id="pass" name="password"                              
-           minlength="8" required>
-  </div>
-	  
-        <button type="submit">sign in</button>
-	<div class="bottom-container">
-	<div class="row">
-	<div class="col">
-	<a href="#" style="color:black"class="btn">Forgot your password?</a>
-	<a href="#" style="color:black"class="btn">Register!</a> 
-	</div>	 
-		 
- <div class="row">
-        <a href="#" class="fb btn">
-          <i class="fa fa-facebook fa-fw"></i> 
-         </a>
-        
-        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-          </i> 
-        </a>
-      </div>
-	  
 
-	  <button class="btn"> EPAM LOGIN </button>
-    
 
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
